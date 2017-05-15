@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  background: linear-gradient(180deg, $brand-color, $brand-color-light 50%);
+  background-repeat: no-repeat;
+  height: 90vh;
+  font-family: $font-sans-serif,sans-serif;
+}
+img.logo {padding-top: 20px;}
+#intro {
+  font-size: 1em;
+  margin: 30px 0;
+  text-align: justify;
+}
+.main {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+}
+p {margin: 15px 0;}
+h1,h3 {padding-top: 20px;}
+ul:not(#chapters) li {margin-left: 20px;}
+#chapters li {
+  font-family: $font-monospace, monospace;
+  list-style: none;
+  margin-bottom: 25px;
+  h2 {
+    font-size: 1.18em;
+    font-weight: 700;
+  }
+  p {
+    font-family: $font-sans-serif;
+    margin: 2px 0 0 35px;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    &:hover > h2 {text-decoration: underline;}
+  }
+}
+*::selection {background: #bbd0e3;}
+footer {
+  text-align: center;
+  a {color: black; text-decoration: none;}
+  a:hover {border-bottom: 1px dotted grey;}
+  span {color: #ec272f;}
+  margin-top: 50px;
+}
+.github {
+  display: block;
+  margin: 60px auto -20px auto;
+  width: 213px;
+  img {
+    float: left;
+    height: 25px;
+    margin-right: 10px;
+  }
+  a {
+    color: black;
+    font-family: $font-sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 25px;
+    text-decoration: none;
+  &:hover {text-decoration: underline;}
+  }
+}
+.search:active, .search *::selection {background-color: rgba(0,0,0,0);}
+dt {font-weight: bold; margin-top: 8px;}
+dd {margin-left: 18px;}

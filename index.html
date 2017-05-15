@@ -1,0 +1,20 @@
+---
+layout: index
+---
+<p id="intro">
+  This is a Website which documents my learn progress in my college modul "Software Engeneering". The entries are oriented towards "Java: A Beginner's Tutorial" <em>Budi Kurniawan</em>.
+</p>
+<ul id="chapters">
+  {% for chapter in site.chapters  %}
+  <li>
+    <a href="{{chapter.url}}">
+      <h2>{{forloop.index}}. {{chapter.title}}</h2>
+      <p>{{chapter.description}}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
+<div class="github">
+  <img src="assets/github.png" alt="Github Icon">
+  <a href="https://github.com/sil4s/java-guide">Contribute on Github</a>
+</div>

@@ -1,0 +1,12 @@
+title: Java
+baseurl: ""
+url: "http://localhost:4000"
+author: Silas Krause
+github_username:  sil4s
+collections:
+  chapters:
+    output: true
+sass:
+    sass_dir: _sass
+    style: compressed
+exclude: [assets/resources]

@@ -1,6 +1,5 @@
 title: Java
-baseurl: "https://sil4s.github.io/java-guide/"
-url: "http://localhost:4000"
+baseurl: /java-guide/
 author: Silas Krause
 github_username:  sil4s
 collections:

@@ -7,7 +7,7 @@ layout: index
 <ul id="chapters">
   {% for chapter in site.chapters  %}
   <li>
-    <a href="{{chapter.url}}">
+    <a href="{{site.baseurl}}{{chapter.url}}">
       <h2>{{forloop.index}}. {{chapter.title}}</h2>
       <p>{{chapter.description}}</p>
     </a>
@@ -15,6 +15,6 @@ layout: index
   {% endfor %}
 </ul>
 <div class="github">
-  <img src="assets/github.png" alt="Github Icon">
+  <img src="{{site.baseurl}}assets/github.png" alt="Github Icon">
   <a href="https://github.com/sil4s/java-guide">Contribute on Github</a>
 </div>

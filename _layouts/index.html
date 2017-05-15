@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" w>
     <title>{{site.title}}</title>
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="{{site.baseurl}}assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="main">
-      <a href="/"><img src="/assets/logo.svg" class="logo" alt="Logo"></a>
+      <a href="{{site.baseurl}}"><img src="{{site.baseurl}}assets/logo.svg" class="logo" alt="Logo"></a>
       <div class="search" title="Hotkey: S" >
         <input class="s-input" type="text" name="Search" placeholder="Search" onkeydown = "if (event.keyCode == 13)alert('Suche funktioniert nicht!')"/>
         <span class="icon-h h1"></span>

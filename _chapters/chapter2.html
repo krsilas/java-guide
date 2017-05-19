@@ -1,0 +1,89 @@
+---
+layout: index
+title: "Language Fundamentals"
+description: What characters are allowed in Java? What are primitives? What are they used for? What are variables? What are constants?
+---
+<h1>{{page.title}}</h1>
+<p>
+  Java uses ASCII for almost all imput elements, except comments, identifiers and the contents of characters and strings.
+</p>
+<h3>Primitives</h3>
+<p>
+  When writing an object-oriented application, you create an object model that resembles the real world.
+  A payroll application, for example, needs Objects like employee, tax and company.
+  Objects are not the only data type.
+  There is another data type called <em>primitive</em>. <br>
+  There are 8 primitive types in Java, each with a specific format and size.
+</p>
+<table>
+  <thead>
+    <td>primitive</td>
+    <td>description</td>
+    <td>range</td>
+  </thead>
+  <tr>
+    <td>byte</td>
+    <td>Byte-length integer (8 Bits)</td>
+    <td>-128 to 127</td>
+  </tr>
+  <tr>
+    <td>short</td>
+    <td>Short integer (16 Bits)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>Integer (32 Bits)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>long</td>
+    <td>Long integer (64 Bits)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>float</td>
+    <td>single-presition floating point (32 Bits)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>double</td>
+    <td>double-presition floating point (64 Bits)</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>char</td>
+    <td>An Unicode character</td>
+    <td><em>See Unicode 6 specification</em></td>
+  </tr>
+  <tr>
+    <td>boolean</td>
+    <td>A boolean value</td>
+    <td>true or false</td>
+  </tr>
+</table>
+<p>
+  The first six primitives represent numbers. Each one has a different size. Some can hold larger numbers than others. We can't just use the largest primitive, because they we want to save memory space to optimize performance and disc space. <br>
+  Byte and long only hold whole numbers. To store decimal numbers you need float or double.
+  A char can contain a single Unicode character.
+  A boolean can only store one of two values: true or false.
+</p>
+<h3>Variables</h3>
+<p>
+  Variables are data placeholders. In Java every variable must have a declare type. There are two data types in Java: <br>
+  - reference types: A variable of reference type provides a refernce to an object. <br>
+  - primitive types: A vairable of primitive type, which holds a primitive.
+</p>
+<p>
+  In addition to the data type, a Java variable also has a name or an identifier. There are a few ground rules in choosing identifiers. <br>
+  1. An identifier is an unlimited-lenth sequence of ASCII characters. An identifier must begin with a (Java) letter or an underscore. <br>
+  2. An identifier must not be a Java keyword, a boolean literal or "null". <br>
+  3. It must be unique within its <a href="#">scope</a>.
+</p>
+<p>
+  You declare a variable by writing the type first, followed by the name plus a semicolon (";").
+</p>
+<h3>Constants</h3>
+<p>
+  Constants are variables whose values cannot be changed after being assigned. You declare a constant by using the keyword <em>final</em>. Constants are usually written in all uppercase and words are seperated by underscores.
+</p>

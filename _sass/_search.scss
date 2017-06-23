@@ -7,7 +7,7 @@
   transition: all 0.3s ease;
   width: 11px;
   &:hover, .icon-h:hover {cursor: pointer;}
-  &:not(.s-active) > input {
+  &:not(.s-active) > form input {
     margin-left: -10px;
     visibility: hidden;
     width: 0%;
@@ -37,7 +37,7 @@
   }
   .h1 {transform: translateY(15px) translateX(-10px) rotate(45deg);}
   .h2 {transform: translateX(1px) translateY(15px) rotate(135deg);}
-  input {
+  form input {
     background-color: rgba(0,0,0,0);
     border: 0px;
     font-size: 0.9em;
@@ -58,3 +58,4 @@
     transition: all 0.15s ease-out;
   }
 }
+form {display: inline;}

@@ -1,7 +1,8 @@
 title: Java
-baseurl: /java-guide/
+baseurl: /java-guide
+url: ""
 author: Silas Krause
-github_username:  sil4s
+github_username:  krsilas
 collections:
   chapters:
     output: true

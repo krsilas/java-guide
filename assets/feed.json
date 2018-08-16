@@ -1,0 +1,22 @@
+---
+layout: null
+---
+{% assign first = true %}
+[
+    {% for item in site.chapters %}
+
+            {% if item.title != null and item.title != empty %}
+            {% unless first %},{% endunless %}{
+                "title": {{item.title | jsonify}},
+                "content": {{item.content | markdownify | strip_html | jsonify}},
+                "link": "{{ site.baseurl }}{{ item.url }}",
+                "date": "{{ item.date }}",
+                "excerpt": "{{ item.snippet }}",
+                "description": "{{ item.description }}",
+                "search_omit": "{{ item.search_omit }}"
+            }
+            {% assign first = false %}
+            {% endif %}
+
+    {% endfor %}
+]

@@ -1,6 +1,13 @@
 ---
 layout: index
 ---
+<div class="search" title="Hotkey: S" >
+  <form method="get" action="/java-guide/search.html" data-search-form>
+    <input class="s-input" type="text" name="q" placeholder="Search" data-search-input />
+  </form>
+  <span class="icon-h h1"></span>
+  <span class="icon-h h2"></span>
+</div>
 <p id="intro">
   This is a Website which documents my learn progress in my college modul "Software Engeneering". The entries are oriented towards "Java: A Beginner's Tutorial" <em>Budi Kurniawan</em>.
 </p>
@@ -15,6 +22,6 @@ layout: index
   {% endfor %}
 </ul>
 <div class="github">
-  <img src="{{site.baseurl}}assets/github.png" alt="Github Icon">
-  <a href="https://github.com/sil4s/java-guide">Contribute on Github</a>
+  <img src="{{site.baseurl}}/assets/github.png" alt="Github Icon">
+  <a href="https://github.com/krsilas/java-guide">Contribute on Github</a>
 </div>

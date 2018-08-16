@@ -59,3 +59,30 @@
   }
 }
 form {display: inline;}
+input#q{
+  background-color: rgba(100,100,100,0.3);
+  border: 1px solid rgba(0,0,0,0.6);
+  height: 120%;
+  border-radius: 4px;
+  outline: none;
+  -webkit-appearance: textfield;
+  &:focus{
+    box-shadow: 0 0 0 1px #7f8387;
+  }
+}
+input[type="submit"]{
+  height: 22px;
+  padding: 3px;
+  font-weight: bold;
+  -webkit-appearance: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: transparent;
+  &:hover {
+    cursor: pointer;
+
+  }
+}
+p[data-search-found]{
+  margin: 30px 0;
+}
